@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DEV_3
+namespace dev_4
 {
-    class Senior : Employee
+    class Identifier
     {
-        public Senior()
+        public static string GetId()
         {
-            cost *= 4;
-            productivity *= 9;
+            Guid id = Guid.NewGuid();
+            return (id.ToString()); 
         }
     }
 }
